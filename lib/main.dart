@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-// import 'package:pokedex/screens/details.dart';
 import 'package:pokedex/screens/home.dart';
 
 void main() {
@@ -15,7 +14,6 @@ class MainApp extends StatelessWidget {
       title: 'Pokedex',
       routes: {
         '/': (context) => const HomeScreen(),
-        // '/details': (context) => const DetailsScreen(),
       },
       initialRoute: '/',
     );

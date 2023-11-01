@@ -91,8 +91,9 @@ class _PokemonGridState extends State<PokemonGrid> {
       builder: (BuildContext context) {
         return AlertDialog(
           title: Text(isCorrect ? 'Resposta Correta!' : 'Resposta Incorreta!'),
-          content: Text(
-              isCorrect ? 'Você acertou!' : 'Você errou. Tente novamente.'),
+          content: Text(isCorrect
+              ? 'Você acertou! Essa é sua $_correctAnswers resposta correta'
+              : 'Você errou, essa é sua $_wrongAnswers resposta errada. Tente outra vez! '),
           actions: <Widget>[
             TextButton(
               onPressed: () {
